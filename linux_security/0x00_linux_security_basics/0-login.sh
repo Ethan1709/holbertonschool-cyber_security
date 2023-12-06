@@ -1,2 +1,2 @@
 #!/bin/bash
-who -a
+last -n 5
