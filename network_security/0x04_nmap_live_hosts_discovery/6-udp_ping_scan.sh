@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sU -p22,80,443 "$1"
+sudo nmap -PU -sn -p22,80,443 "$1"
