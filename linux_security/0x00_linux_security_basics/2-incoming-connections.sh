@@ -1,2 +1,2 @@
 #!/bin/bash
-ss -t -a "( sport = :http )"
+sudo ss -t -a "( sport = :http )"
