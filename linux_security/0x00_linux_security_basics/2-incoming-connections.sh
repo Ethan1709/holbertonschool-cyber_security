@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ss -t -a "( sport = :http )"
+sudo ufw allow 80/tcp
