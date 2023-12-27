@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/*-release | grep "^ID=" | sed 's/ID=//'
+lsb_release -s -i | awk '{print $1}'
