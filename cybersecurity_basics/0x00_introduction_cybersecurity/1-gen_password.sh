@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -dc '[:graph:]' < /dev/unrandom | head -c $1
+tr -dc '[:alumn:]' < /dev/unrandom | head -c $1
