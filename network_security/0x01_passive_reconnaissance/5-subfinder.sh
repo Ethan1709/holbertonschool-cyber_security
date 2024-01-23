@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -d "$1" -nW -ip -o "$1".txt -silent
+subfinder -silent -d $1 -o $1.txt -nW -oI
