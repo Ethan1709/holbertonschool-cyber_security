@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -H "Host: $1" --form $3 $2
+curl -X POSTS -H "Host: $1" -d $3 $2
