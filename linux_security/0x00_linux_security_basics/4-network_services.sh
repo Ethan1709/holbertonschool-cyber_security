@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo netsat -plut
+sudo netstat -plut
