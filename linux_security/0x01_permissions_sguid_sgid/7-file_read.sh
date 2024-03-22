@@ -1,3 +1,2 @@
 #!/bin/bash
-chmod o-wx $1
-chmod o+r $1
+ls -l $1 -exec chmod o+r {} \;
