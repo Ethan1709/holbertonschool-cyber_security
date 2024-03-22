@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al $1
+find $1 -type f -perm -04000 2>/dev/null
