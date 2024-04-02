@@ -1,2 +1,2 @@
 #!/bin/bash
-find $1 -perm /2000
+find $1 -type f -perm -02000 2>/dev/null
