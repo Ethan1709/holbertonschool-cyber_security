@@ -1,1 +1,3 @@
-GET "Host: 10.42.224.103" "Cookie: .eJxFyksKgCAURuG9_GMJmzoqWkIrULyR4AuvUhDtPaGBw_NxHqw2uMhQh_ZMAlvjmgKVIXvLOZXaoZbWm4J2Hgr8-3KRkbeU02lqhICzULNAYypRBxoj3g8vsSW4.Zh5vlw.oineoBB9ihmizSacKGz36vm4TIU"
+GET /ticket?id=8 HTTP/1.1
+Host: 10.42.224.103
+Cookie: .eJxFyksKgCAURuG9_GMJmzoqWkIrULyR4AuvUhDtPaGBw_NxHqw2uMhQh_ZMAlvjmgKVIXvLOZXaoZbWm4J2Hgr8-3KRkbeU02lqhICzULNAYypRBxoj3g8vsSW4.Zh5vlw.oineoBB9ihmizSacKGz36vm4TIU
