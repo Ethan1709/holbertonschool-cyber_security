@@ -1,1 +1,1 @@
-GET http://machine-ip/ticket?id=8
+GET "Host: 10.42.224.103"
