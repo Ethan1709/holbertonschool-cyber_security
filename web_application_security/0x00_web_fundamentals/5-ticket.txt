@@ -1,1 +1,1 @@
-http://machine-ip/ticket?id=8
+GET http://machine-ip/ticket?id=8
