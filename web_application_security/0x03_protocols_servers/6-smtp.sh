@@ -1,2 +1,2 @@
 #!/bin/bash
-grep 'STARTTLS' /etc/smtp/smtpd.conf
+grep 'smtpd_tls_security_level' /etc/smtp/smtpd.conf
