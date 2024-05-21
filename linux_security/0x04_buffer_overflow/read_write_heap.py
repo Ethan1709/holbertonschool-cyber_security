@@ -9,6 +9,10 @@ pid = int(sys.argv[1])
 search_str = sys.argv[2].encode('utf-8')
 replace_str = sys.argv[3].encode('utf-8')
 
+if len(sys.argv) != 4:
+    print(f'Error: usage pid, string_to_find, replacing_string')
+    sys.exit(1)
+
 info = subprocess.check_output(f"cat /proc/{pid}/maps | grep 'heap'", shell=True)
 info = info.decode('utf-8')
 info = info.split(' ')
