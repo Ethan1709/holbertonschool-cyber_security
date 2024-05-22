@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """heap exploitation"""
+
 import os
 import sys
 import subprocess
@@ -45,4 +46,3 @@ try:
         print(f"Replaced '{search_str.decode()}' with '{replace_str.decode()}' at address {hex(abs_address)}")
 finally:
     os.close(mem_file)
-
