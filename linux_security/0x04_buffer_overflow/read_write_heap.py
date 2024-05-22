@@ -10,8 +10,7 @@ def exploit_heap(pid, search_str, replace_str):
     search_str = search_str.encode('utf-8')
     replace_str = replace_str.encode('utf-8')
 
-    info = subprocess.check_output(f"cat /proc/{pid}/maps | grep 'heap'",
-                                    shell=True)
+    info = subprocess.check_output(f"cat /proc/{pid}/maps | grep 'heap'", shell=True)
     info = info.decode('utf-8')
     info = info.split(' ')
 
@@ -40,8 +39,7 @@ def exploit_heap(pid, search_str, replace_str):
             os.write(mem_file, b'\x00' * len(search_str))
             os.lseek(mem_file, abs_address, os.SEEK_SET)
             os.write(mem_file, replace_str)
-            print(f"Replaced '{search_str.decode()}' 
-                  with '{replace_str.decode()}' at address {hex(abs_address)}")
+            print(f"Replaced '{search_str.decode()}' with '{replace_str.decode()}' at address {hex(abs_address)}")
     finally:
         os.close(mem_file)
 
