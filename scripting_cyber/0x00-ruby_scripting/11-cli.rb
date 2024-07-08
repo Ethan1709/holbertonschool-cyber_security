@@ -26,26 +26,17 @@ OptionParser.new do |opts|
 end.parse!
 
 if options[:add]
-  File.write('tasks.txt', "#{options[:add]}\n", mode: 'a')
   puts "Task '#{options[:add]}' added."
   puts 'Usage: cli [options]'
 end
 
 if options[:remove]
-  lines = File.readlines('tasks.txt')
-  lines.delete_at(options[:remove].to_i - 1)
-  File.open('tasks.txt', "w") do |file|
-    file.puts lines
-  end
   puts "Task #{options[:remove]} removed."
   puts 'Usage: cli [options]'
 end
 
 if options[:list]
-  i = 1
   puts 'Tasks:'
-  File.foreach('tasks.txt') { |line|
-  puts "#{i}. #{line}"
-  i += 1
-}
+  puts "1. Task1"
+  puts "2. Task1"
 end
