@@ -9,7 +9,7 @@ def crack(hashed_password, dictionary_file)
     exit
   end
 
-  File.foreach("dict.txt") { |line|
+  File.foreach(dictionary_file) { |line|
   cleaned_line = line.chomp
   sha256= Digest::SHA256.hexdigest(cleaned_line)
   if sha256 == hashed_password
