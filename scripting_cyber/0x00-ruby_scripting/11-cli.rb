@@ -39,4 +39,5 @@ if options[:list]
   puts 'Tasks:'
   puts "1. Task1"
   puts "2. Task1"
+  puts 'Usage: cli [options]'
 end
