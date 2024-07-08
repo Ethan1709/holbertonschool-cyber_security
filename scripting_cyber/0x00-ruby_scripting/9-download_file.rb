@@ -6,7 +6,7 @@ require "uri"
 require "fileutils"
 def download(url, path)
   if ARGV.length != 2
-    puts 'Usage: 9-download_file.rb URL LOCAL_FILE_PATH'
+    puts 'Usage: 10-download_file.rb URL LOCAL_FILE_PATH'
     exit
   end
 
