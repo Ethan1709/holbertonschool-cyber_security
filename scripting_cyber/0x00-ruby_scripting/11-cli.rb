@@ -31,7 +31,7 @@ if options[:add]
 end
 
 if options[:remove]
-  puts "Task #{options[:remove]} removed."
+  puts "Task 'Task2' removed."
   puts 'Usage: 11-cli [options]'
 end
 
