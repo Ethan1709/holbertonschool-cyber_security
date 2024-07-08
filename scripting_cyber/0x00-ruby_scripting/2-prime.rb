@@ -2,13 +2,9 @@
 
 class Prime
     def prime(number)
-        if number == 1
-            return false
-        end
-        for i in 2..number do
-            if number % i == 0
-                return false
-            end
+        return false if number <= 1
+        for i in 2...number do
+            return false if number % i == 0
         end
         return true
     end
