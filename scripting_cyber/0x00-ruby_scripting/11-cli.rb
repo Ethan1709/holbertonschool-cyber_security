@@ -19,7 +19,7 @@ OptionParser.new do |opts|
     options[:remove] = v
   end
 
-  opts.on("-h", "--help", "Show this message") do |v|
+  opts.on("-h", "--help", "Show help") do |v|
     puts opts
     exit
   end
