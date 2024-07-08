@@ -5,6 +5,7 @@ def print_arguments
     puts 'No arguments provided.'
   end
   if ARGV.length >= 1
+    puts 'Arguments:'
     for arg in 0..(ARGV.length - 1)
       puts "#{arg + 1}. #{ARGV[arg]}"
     end
