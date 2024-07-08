@@ -27,17 +27,17 @@ end.parse!
 
 if options[:add]
   puts "Task '#{options[:add]}' added."
-  puts 'Usage: cli [options]'
+  puts 'Usage: 11-cli [options]'
 end
 
 if options[:remove]
   puts "Task #{options[:remove]} removed."
-  puts 'Usage: cli [options]'
+  puts 'Usage: 11-cli [options]'
 end
 
 if options[:list]
   puts 'Tasks:'
   puts "1. Task1"
   puts "2. Task1"
-  puts 'Usage: cli [options]'
+  puts 'Usage: 11-cli [options]'
 end
