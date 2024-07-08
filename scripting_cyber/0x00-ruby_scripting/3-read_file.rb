@@ -1,17 +1,21 @@
 #!/usr/bin/ruby
 
-require 'json'
+def count_user_ids(path)
+  require 'json'
 
-file_content = File.read('file.json')
+  file_content = File.read(path)
+  data = JSON.parse(file_content)
 
-data = JSON.parse(file_content)
+  array = []
+  data.each do |key, value|
+    array.append(key['userId'])
+  end
+  array = array.uniq.map{|t| [t,array.count(t)]}.to_h
 
-array = []
-data.each do |key, value|
-  array.append(key['userId'])
+  for i in array do
+    puts "#{i[0]}: #{i[1]}"
+  end
 end
-array = array.uniq.map{|t| [t,array.count(t)]}.to_h
 
-for i in array do
-  puts "#{i[0]}: #{i[1]}"
-end
+path = 'file.json'
+count_user_ids(path)
