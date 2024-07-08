@@ -5,7 +5,7 @@ require 'optparse'
 
 options = {}
 OptionParser.new do |opts|
-  opts.banner = "Usage: example.rb [options]"
+  opts.banner = "Usage: 11-cli.rb [options]"
 
   opts.on("-a", "--add TASK", "Add a new task") do |v|
     options[:add] = v
@@ -20,7 +20,7 @@ OptionParser.new do |opts|
   end
 
   opts.on("-h", "--help", "Show help") do |v|
-    puts "#{opts}\n"
+    puts opts
     exit
   end
 end.parse!
