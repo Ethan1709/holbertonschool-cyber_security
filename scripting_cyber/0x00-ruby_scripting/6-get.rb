@@ -7,9 +7,9 @@ def get_request(url)
   uri = URI(url)
   res = res = Net::HTTP.get_response(uri)
   if res.code != '200'
-    puts "Response status: #{res.code} Not found"
-    exit
-  puts puts "Response status: #{res.code} OK"
+    then puts "Response status: #{res.code} Not found"
+    else puts "Response status: #{res.code} OK"
+  end
   puts 'Response body:'
   puts res.body
 end
