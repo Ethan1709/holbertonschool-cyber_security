@@ -20,7 +20,7 @@ OptionParser.new do |opts|
   end
 
   opts.on("-h", "--help", "Show help") do |v|
-    puts opts
+    puts "#{opts}\n"
     exit
   end
 end.parse!
