@@ -9,7 +9,7 @@ def get_request(url)
   if res.code != '200'
     then puts "Response status: #{res.code} Not found"
     else puts "Response status: #{res.code} OK"
+  end
   puts 'Response body:'
   puts res.body
-  end
 end
