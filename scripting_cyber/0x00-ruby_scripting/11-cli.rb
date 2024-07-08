@@ -38,6 +38,6 @@ end
 if options[:list]
   puts 'Tasks:'
   puts "1. Task1"
-  puts "2. Task1"
+  puts "2. Task2"
   puts 'Usage: 11-cli [options]'
 end
